@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Sécurisation d’un réseau – Portfolio de Toanui AVRIL</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Conception et sécurisation d'un réseau (2024) : objectifs, compétences et schéma.">
+  <style>
+    :root{
+      --bg:#0f1115;
+      --panel:#151923;
+      --text:#e7e9ee;
+      --muted:#aab1c3;
+      --accent:#4f8cff;
+      --maxw:1200px;
+      --border:#222733;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,"Helvetica Neue",Arial,"Apple Color Emoji","Segoe UI Emoji"}
+    a{color:var(--accent);text-decoration:none}
+    a:hover{text-decoration:underline}
+    h1,h2,h3{line-height:1.2;margin:0 0 .5rem}
+    h1{font-size:1.8rem}
+    h2{font-size:1.4rem}
+    h3{font-size:1.1rem;color:var(--muted);font-weight:600}
+    p{margin:.5rem 0 1rem}
+    ul{margin:.25rem 0 1rem 1.1rem}
+    /* Layout */
+    .wrap{max-width:var(--maxw);margin:0 auto;display:grid;grid-template-columns: 300px 1fr;gap:2rem;padding:2rem}
+    .sidebar{position:sticky;top:1rem;height:fit-content;background:var(--panel);border:1px solid var(--border);border-radius:14px;padding:1.25rem}
+    .brand{border-bottom:1px solid var(--border);padding-bottom:1rem;margin-bottom:1rem}
+    nav ul{list-style:none;margin:0;padding:0;display:grid;gap:.25rem}
+    nav a{display:block;padding:.6rem .75rem;border-radius:10px;color:var(--text);background:transparent;border:1px solid transparent}
+    nav a.active, nav a:hover{background:#101522;border-color:var(--border)}
+    /* Content */
+    main{background:var(--panel);border:1px solid var(--border);border-radius:14px;padding:1.5rem}
+    .lead{color:var(--muted)}
+    .card{margin-top:1.25rem;padding:1rem;border:1px solid var(--border);border-radius:12px;background:#121723}
+    .img{width:100%;height:auto;border-radius:10px;border:1px solid var(--border);display:block}
+    figure{margin:0}
+    figcaption{color:var(--muted);font-size:.9rem;margin-top:.25rem}
+    /* Responsive */
+    @media (max-width:880px){
+      .wrap{grid-template-columns:1fr}
+      .sidebar{position:static}
+    }
+    /* Footer */
+    footer{max-width:var(--maxw);margin:1rem auto 2rem;color:var(--muted);padding:0 2rem}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <!-- Sidebar -->
+    <aside class="sidebar" aria-label="Barre latérale">
+      <div class="brand">
+        <h1>Portfolio de Toanui AVRIL</h1>
+        <div class="lead">Sécurisation d’un réseau</div>
+      </div>
+      <nav aria-label="Navigation principale">
+        <ul>
+          <li><a href="./index.html">Accueil</a></li>
+          <li><a href="./realisation-d-un-site-web.html">Réalisation d'un site web</a></li>
+          <li><a href="./decouverte-du-pentesting.html">Découverte du Pentesting</a></li>
+          <li><a class="active" href="./securisation-d-un-reseau.html">Sécurisation d'un réseau</a></li>
+          <li><a href="./reseau-multi-sites.html">Réseau multi-sites</a></li>
+          <li><a href="./stage-airtahiti.html">Stage AirTahiti</a></li>
+          <li><a href="./stage-orange.html">Stage Orange</a></li>
+          <li><a href="./cv.html">CV</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <!-- Main content -->
+    <main role="main">
+      <header>
+        <h2>Sécurisation d’un réseau</h2>
+        <h3>Conception et sécurisation d'un réseau — projet mené seul (2024)</h3>
+      </header>
+
+      <section class="card" aria-labelledby="desc">
+        <h2 id="desc">Description</h2>
+        <p>
+          L’objectif du projet était de concevoir un réseau sécurisé composé de plusieurs sous-réseaux
+          (segments de type LAN) capables de communiquer entre eux, tout en appliquant des mesures
+          minimales pour contrer des attaques basiques. Ce travail m’a aidé à comprendre comment
+          l’architecture impacte la sécurité et pourquoi il est essentiel de mettre en place des
+          protections, même élémentaires.
+        </p>
+      </section>
+
+      <section class="card" aria-labelledby="skills">
+        <h2 id="skills">Compétences travaillées</h2>
+        <ul>
+          <li>Sécurisation des réseaux informatiques.</li>
+          <li>Conception d’une architecture réseau.</li>
+          <li>Mise en place de services avancés.</li>
+        </ul>
+      </section>
+
+      <section class="card" aria-labelledby="schema">
+        <h2 id="schema">Exemple de schéma</h2>
+        <figure>
+          <!-- Remplace l’URL par un fichier local si tu veux éviter toute ressource externe -->
+          <img class="img" src="https://primary.jwwb.nl/public/h/q/q/temp-jpuyuorzmfgoaelmfhat/image_2024-03-28_122201823-standard.png"
+               alt="Schéma d’un réseau segmenté et sécurisé">
+          <figcaption>Schéma d’architecture : segmentation des LAN et mesures de base.</figcaption>
+        </figure>
+      </section>
+    </main>
+  </div>
+
+  <footer>
+    &copy; 2024 Toanui Avril
+  </footer>
+</body>
+</html>
