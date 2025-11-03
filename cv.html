@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>CV – Portfolio de Toanui AVRIL</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="CV de Toanui Avril (BUT Réseaux & Télécoms) : expériences, compétences et formations.">
+  <style>
+    :root{
+      --bg:#0f1115; --panel:#121522; --muted:#9ea6bb; --text:#e7e9ee;
+      --accent:#5aa9ff; --border:#1d232b; --maxw:1100px;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter,system-ui,Segoe UI,Roboto,Arial;line-height:1.6;background:var(--bg);color:var(--text)}
+    a{color:var(--accent);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .container{max-width:var(--maxw);margin:0 auto;padding:20px;display:grid;grid-template-columns:280px 1fr;gap:24px}
+    header.site-title{grid-column:1 / -1;margin-bottom:8px}
+    header h1{margin:.2rem 0 0;font-size:1.6rem}
+    header p.lead{margin:.2rem 0 1rem;color:var(--muted)}
+    aside{background:var(--panel);padding:16px;border-radius:12px;border:1px solid var(--border)}
+    nav ul{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:6px}
+    nav a{display:block;padding:8px;border-radius:8px;color:var(--text);border:1px solid transparent}
+    nav a.active, nav a:hover{background:#0f1624;border-color:var(--border)}
+    main.card{background:var(--panel);padding:18px;border-radius:12px;border:1px solid var(--border)}
+    .toolbar{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-bottom:12px}
+    .btn{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--border);background:#0f1624;
+         color:var(--text);padding:8px 12px;border-radius:10px;text-decoration:none}
+    .btn:hover{background:#101a2a}
+    .viewer{width:100%;aspect-ratio:1/1.35;min-height:70vh;border:1px solid var(--border);border-radius:12px;overflow:hidden;background:#0b0e14}
+    .viewer object,.viewer embed,.viewer iframe{width:100%;height:100%;border:0;display:block}
+    .note{color:var(--muted);font-size:.95rem;margin-top:10px}
+    footer{grid-column:1 / -1;color:var(--muted);text-align:center;margin-top:18px;font-size:.9rem}
+    @media (max-width:900px){
+      .container{grid-template-columns:1fr;padding:14px}
+      aside{order:2}
+    }
+    @media print{
+      body{background:#fff;color:#000}
+      .container{max-width:none;padding:0;display:block}
+      aside, .toolbar, footer{display:none}
+      .viewer{border:0;min-height:auto;aspect-ratio:auto}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header class="site-title">
+      <h1>CV</h1>
+      <p class="lead">Téléchargez ou consultez mon CV (PDF) directement depuis cette page.</p>
+    </header>
+
+    <aside aria-label="Navigation latérale">
+      <nav aria-label="Menu principal">
+        <ul>
+          <li><a href="./index.html">Accueil</a></li>
+          <li><a href="./realisation-d-un-site-web.html">Réalisation d'un site web</a></li>
+          <li><a href="./decouverte-du-pentesting.html">Découverte du Pentesting</a></li>
+          <li><a href="./securisation-d-un-reseau.html">Sécurisation d'un réseau</a></li>
+          <li><a href="./reseau-multi-sites.html">Réseau multi-sites</a></li>
+          <li><a href="./stage-airtahiti.html">Stage AirTahiti</a></li>
+          <li><a href="./stage-orange.html">Stage Orange</a></li>
+          <li><a class="active" href="./cv.html">CV</a></li>
+        </ul>
+      </nav>
+      <div style="margin-top:12px;color:var(--muted);font-size:.95rem">
+        <strong>Format :</strong> PDF<br>
+        <strong>Dernière maj :</strong> 2024
+      </div>
+    </aside>
+
+    <main class="card" role="main">
+      <div class="toolbar">
+        <!-- Remplace le href par le chemin de ton PDF local -->
+        <a class="btn" href="./files/cv-toanui-avril.pdf" download>
+          <!-- petite icône flèche ↓ en UTF-8 -->
+          <span aria-hidden="true">⬇️</span> Télécharger le CV (PDF)
+        </a>
+        <a class="btn" href="./files/cv-toanui-avril.pdf" target="_blank" rel="noopener">
+          <span aria-hidden="true">🗔</span> Ouvrir dans un nouvel onglet
+        </a>
+        <button class="btn" onclick="window.print()"><span aria-hidden="true">🖨️</span> Imprimer</button>
+      </div>
+
+      <div class="viewer" role="region" aria-label="Visionneuse du CV en PDF">
+        <!-- Option A : PDF local (recommandé) -->
+        <object data="./files/cv-toanui-avril.pdf" type="application/pdf">
+          <!-- Option B (fallback) : Google Viewer si besoin -->
+          <iframe src="https://docs.google.com/gview?embedded=1&url=./files/cv-toanui-avril.pdf"></iframe>
+        </object>
+      </div>
+
+      <p class="note">
+        Si le PDF ne s’affiche pas, utilisez le bouton « Ouvrir dans un nouvel onglet » ou téléchargez le fichier.
+      </p>
+    </main>
+
+    <footer>&copy; 2024 Toanui Avril</footer>
+  </div>
+</body>
+</html>
