@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Stage AirTahiti – Portfolio de Toanui AVRIL</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Stage de 10 semaines chez Air Tahiti : administration système, RAID10, NBDE, et expérience interculturelle.">
+  <style>
+    :root{
+      --bg:#0f1115;
+      --panel:#121522;
+      --muted:#9ea6bb;
+      --text:#e7e9ee;
+      --accent:#4f8cff;
+      --border:#1d232b;
+      --maxw:1100px;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter,system-ui,Segoe UI,Roboto,Arial;line-height:1.6;background:var(--bg);color:var(--text)}
+    a{color:var(--accent);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .container{max-width:var(--maxw);margin:0 auto;padding:20px;display:grid;grid-template-columns:280px 1fr;gap:24px}
+    header.site-title{grid-column:1 / -1;margin-bottom:8px}
+    header h1{margin:.2rem 0 0;font-size:1.5rem}
+    header p.lead{margin:.2rem 0 1rem;color:var(--muted)}
+    aside.sidebar{background:var(--panel);padding:16px;border-radius:12px;border:1px solid var(--border)}
+    nav ul{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:6px}
+    nav a{display:block;padding:8px;border-radius:8px;color:var(--text);border:1px solid transparent}
+    nav a.active, nav a:hover{background:#0f1624;border-color:var(--border)}
+    main.card{background:var(--panel);padding:18px;border-radius:12px;border:1px solid var(--border)}
+    h2{margin-top:0;color:var(--text)}
+    .split{display:grid;grid-template-columns:1fr 360px;gap:18px;align-items:start}
+    .img{width:100%;height:auto;border-radius:10px;border:1px solid var(--border);display:block}
+    .meta{color:var(--muted);font-size:.95rem;margin-bottom:8px}
+    .section{margin-top:14px}
+    footer{grid-column:1 / -1;color:var(--muted);text-align:center;margin-top:18px;font-size:.9rem}
+    @media (max-width:900px){
+      .container{grid-template-columns:1fr;padding:14px}
+      .split{grid-template-columns:1fr}
+      aside.sidebar{order:2}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header class="site-title">
+      <h1>Stage AirTahiti</h1>
+      <p class="lead">Stage de 10 semaines — administration système & réseau, RAID10, NBDE, et immersion à Tahiti</p>
+    </header>
+
+    <aside class="sidebar" aria-label="Navigation">
+      <nav aria-label="Menu principal">
+        <ul>
+          <li><a href="./index.html">Accueil</a></li>
+          <li><a href="./realisation-d-un-site-web.html">Réalisation d'un site web</a></li>
+          <li><a href="./decouverte-du-pentesting.html">Découverte du Pentesting</a></li>
+          <li><a href="./securisation-d-un-reseau.html">Sécurisation d'un réseau</a></li>
+          <li><a href="./reseau-multi-sites.html">Réseau multi-sites</a></li>
+          <li><a class="active" href="./stage-airtahiti.html">Stage AirTahiti</a></li>
+          <li><a href="./stage-orange.html">Stage Orange</a></li>
+          <li><a href="./cv.html">CV</a></li>
+        </ul>
+      </nav>
+      <div style="margin-top:12px;color:var(--muted);font-size:.95rem">
+        <strong>Durée :</strong> 10 semaines<br>
+        <strong>Année :</strong> 2024
+      </div>
+    </asid
